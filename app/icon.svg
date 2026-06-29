@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Gradients to ensure visibility on both light & dark browser tabs -->
+    <linearGradient id="rustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8c3d2b"/>
+      <stop offset="100%" stop-color="#e07c5f"/>
+    </linearGradient>
+    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17191c"/>
+      <stop offset="100%" stop-color="#8e929d"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Ring (AI Context) in Rust Gradient - Larger radius & optimized center -->
+  <circle cx="190" cy="190" r="146" fill="none" stroke="url(#rustGrad)" stroke-width="38"/>
+  
+  <!-- Inner Ring (User Growth) in Ink-to-Grey Gradient - Larger radius & optimized center -->
+  <circle cx="322" cy="322" r="146" fill="none" stroke="url(#inkGrad)" stroke-width="38"/>
+  
+  <!-- Speech Bubble Tail connected to the Rust ring - Adjusted for larger scale -->
+  <path d="M100 310 L50 410 L150 360" fill="none" stroke="url(#rustGrad)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Central Wisdom Spark (Floating Accent) - Repositioned to scale -->
+  <path d="M400 112 Q420 112 420 92 Q420 112 440 112 Q420 112 420 132 Q420 112 400 112 Z" fill="#e07c5f"/>
+</svg>
